@@ -23,10 +23,10 @@ public class Sample1 {
 
     @Before
     public void before() throws MalformedURLException {
-//        Configuration.reportsFolder = "/Users/sanakagawa/Documents/Selenium関連";
+//        Configuration.reportsFolder = "キャプチャ保存先パス";
 //        Configuration.browser = WebDriverRunner.CHROME;
-//        System.setProperty("webdriver.chrome.driver","/Users/sanakagawa/Documents/Selenium関連/chromedriver_win32/chromedriver.exe");
-//        System.setProperty("webdriver.gecko.driver","/Users/sanakagawa/Documents/Selenium関連/geckodriver-v0.26.0-win64/geckodriver.exe");
+//        System.setProperty("webdriver.chrome.driver","パス/chromedriver.exe");
+//        System.setProperty("webdriver.gecko.driver","パス/geckodriver.exe");
         String urlToRemoteWD = "http://localhost:4444/wd/hub";
         RemoteWebDriver driver = new RemoteWebDriver(new URL(urlToRemoteWD), DesiredCapabilities.edge());
         WebDriverRunner.setWebDriver(driver);
